@@ -14,7 +14,7 @@ environment(:test) do
   config['db'] = EM::Synchrony::ConnectionPool.new(:size => 20) do
     ::Mysql2::EM::Client.new(hostname: 'localhost', username: ENV['DB_USER'],
                              password: ENV['DB_PASSWORD'], socket: nil,
-                             database: 'goliath',
+                             database: 'goliath_test',
                              reconnect: true)
   end
 end
