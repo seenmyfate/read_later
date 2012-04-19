@@ -10,7 +10,7 @@ The API endpoint inserts the values into a database asynchronously, and returns 
 		
 ### Local setup
 
-Create the database
+Create the databases `read_later` and `read_later_test`, and add an `articles` table
 
 	CREATE TABLE `articles` (
 	  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
